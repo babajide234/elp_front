@@ -2,7 +2,7 @@ import '@/bootstrap';
 import { Message } from 'element-ui';
 import { isLogged } from '@/utils/auth';
 
-const BASE_URL_DEV = 'http://127.0.0.1:8000/api/';
+// const BASE_URL_DEV = 'http://127.0.0.1:8000/api/';
 const BASE_URL_LIVE = 'https://portablaze.com/api/';
 
 // Create axios instance
@@ -28,7 +28,6 @@ service.interceptors.request.use(
     const token = isLogged();
     if (token) {
       config.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem('Token');
-
     }
     return config;
   },
