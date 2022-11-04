@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 15.x, 16.x]
+        node-version: [15.x, 16.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -29,23 +29,23 @@ jobs:
         with:
           name: build
           path: build
-  # web-deploy:
-  #   needs: build
-  #   name: 🎉 Deploy
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #   - name: Checkout Repo
-  #     uses: actions/checkout@v2
-  #   - name: Download Artifact
-  #     uses: actions/download-artifact@master
-  #     with:
-  #       name: build
-  #       path: build
-  #   - name: FTP Deploy
-  #     uses: SamKirkland/FTP-Deploy-Action@4.2.0
-  #     with:
-  #       server: ${{ secrets.FTP_SERVER }}
-  #       username: ${{ secrets.FTP_USERNAME }}
-  #       password: ${{ secrets.FTP_PASSWORD }}
-  #       protocol: ftps
-  #       server-dir: /public_html/admin-public/admin_new
+  web-deploy:
+    needs: build
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v2
+    - name: Download Artifact
+      uses: actions/download-artifact@master
+      with:
+        name: build
+        path: build
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        protocol: ftps
+        server-dir: /frontEnd
