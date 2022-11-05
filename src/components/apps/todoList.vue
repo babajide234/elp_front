@@ -2,7 +2,10 @@
   <section class="todo-list">
     <form @submit.prevent="submitTodo">
       <div class="add-items d-lg-flex">
-        <input v-model="newTodo" type="text" class="form-control todo-list-input" placeholder="What do you need to do today?">
+        <input
+          v-model="newTodo" type="text" class="form-control todo-list-input"
+          placeholder="What do you need to do today?"
+        >
         <button id="add-task" class="add btn btn-gradient-primary font-weight-bold todo-list-add-btn ml-0 ml-lg-2 mt-2 mt-lg-0">Add</button>
       </div>
     </form>
@@ -24,7 +27,7 @@
 <script>
 export default {
   // eslint-disable-next-line vue/name-property-casing
-  name: 'todo-list',
+  name: 'TodoList',
   data() {
     return {
       todos: [

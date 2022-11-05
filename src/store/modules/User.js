@@ -1,3 +1,4 @@
+/* eslint-disable no-empty-pattern */
 // import axios from 'axios';
 // import store from '@/store';
 import { login, logout, getInfo, register, invite, list, resident, getresident, singleresident } from '@/api/auth';
@@ -44,7 +45,7 @@ const actions = {
       });
     });
   },
-  register({  }, data){
+  register({ }, data){
     return new Promise((_resolve, reject) => {
       register({
         first_name: data.first_name,
@@ -137,7 +138,7 @@ const actions = {
         });
     });
   },
-  inviteTeam({  }, data) {
+  inviteTeam({}, data) {
     return new Promise((resolve) => {
       invite({
         roles: data.roles,
@@ -152,7 +153,7 @@ const actions = {
         });
     });
   },
-  listUsers({  }){
+  listUsers({ }){
     return new Promise((resolve) => {
       list()
         .then(response => {
@@ -164,7 +165,7 @@ const actions = {
         });
     });
   },
-  addResident({  }, data){
+  addResident({ }, data){
     return new Promise((resolve) => {
       getresident({
         first_name: data.contact_Info.first_name,
@@ -305,7 +306,7 @@ const actions = {
         });
     });
   },
-  Resident({  }){
+  Resident({ }){
     return new Promise((resolve) => {
       resident()
         .then(response => {
@@ -317,7 +318,7 @@ const actions = {
         });
     });
   },
-  SingleResident({  }, id){
+  SingleResident({ }, id){
     return new Promise((resolve) => {
       singleresident({
         data: id,

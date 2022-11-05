@@ -24,7 +24,10 @@
                 label-for="input-1"
                 :state="state"
               >
-                <b-form-input id="input-1" v-model="info.Email" :state="state" :type="`email`" />
+                <b-form-input
+                  id="input-1" v-model="info.Email" :state="state"
+                  :type="`email`"
+                />
               </b-form-group>
             </b-col>
             <b-col sm="12">
@@ -35,7 +38,10 @@
                 label-for="role"
                 :state="state"
               >
-                <b-form-select id="role" v-model="info.AccessType" :options="options" size="md" />
+                <b-form-select
+                  id="role" v-model="info.AccessType" :options="options"
+                  size="md"
+                />
               </b-form-group>
             </b-col>
             <b-col sm="12">

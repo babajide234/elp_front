@@ -13,16 +13,28 @@
                 <h6 class="font-weight-light">Complete User Registration</h6>
                 <div class="pt-3">
                   <div class="form-group">
-                    <input v-model="user.first_name" type="text" class="form-control form-control-lg" placeholder="First Name">
+                    <input
+                      v-model="user.first_name" type="text" class="form-control form-control-lg"
+                      placeholder="First Name"
+                    >
                   </div>
                   <div class="form-group">
-                    <input v-model="user.last_name" type="text" class="form-control form-control-lg" placeholder="Last Name">
+                    <input
+                      v-model="user.last_name" type="text" class="form-control form-control-lg"
+                      placeholder="Last Name"
+                    >
                   </div>
                   <div class="form-group">
-                    <input v-model="user.password" type="password" class="form-control form-control-lg" placeholder="Password">
+                    <input
+                      v-model="user.password" type="password" class="form-control form-control-lg"
+                      placeholder="Password"
+                    >
                   </div>
                   <div class="form-group">
-                    <input v-model="user.re_password" type="password" class="form-control form-control-lg" placeholder="Password">
+                    <input
+                      v-model="user.re_password" type="password" class="form-control form-control-lg"
+                      placeholder="Password"
+                    >
                   </div>
                   <div class="mt-3">
                     <button class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" @click="login">SIGN IN</button>

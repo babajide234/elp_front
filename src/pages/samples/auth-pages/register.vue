@@ -19,28 +19,50 @@
                     <input v-model="formData.company" class="form-control form-control-lg" placeholder="Company Name">
                   </div>
                   <div class="form-group">
-                    <input id="" v-model="formData.email" type="email" class="form-control form-control-lg" placeholder="Email">
+                    <input
+                      id="" v-model="formData.email" type="email"
+                      class="form-control form-control-lg" placeholder="Email"
+                    >
                     <!-- <form-error v-if="errors.title" :errors="errors">
                       @{{ errors.title }}
                     </form-error> -->
                   </div>
                   <div class="form-group">
-                    <input id="" v-model="formData.first_name" type="text" class="form-control form-control-lg" placeholder="First Name">
+                    <input
+                      id="" v-model="formData.first_name" type="text"
+                      class="form-control form-control-lg" placeholder="First Name"
+                    >
                   </div>
                   <div class="form-group">
-                    <input id="" v-model="formData.last_name" type="text" class="form-control form-control-lg" placeholder="Last Name">
+                    <input
+                      id="" v-model="formData.last_name" type="text"
+                      class="form-control form-control-lg" placeholder="Last Name"
+                    >
                   </div>
                   <div class="form-group">
-                    <input id="" v-model=" formData.phone_number" type="text" class="form-control form-control-lg" placeholder="Phone No">
+                    <input
+                      id="" v-model=" formData.phone_number" type="text"
+                      class="form-control form-control-lg" placeholder="Phone No"
+                    >
                   </div>
                   <div class="form-group">
-                    <textarea id="" v-model="formData.address" name="" class="form-control form-control-lg" cols="30" rows="10" placeholder="Address" />
+                    <textarea
+                      id="" v-model="formData.address" name=""
+                      class="form-control form-control-lg" cols="30" rows="10"
+                      placeholder="Address"
+                    />
                   </div>
                   <div class="form-group">
-                    <input id="" v-model="formData.password" type="password" class="form-control form-control-lg" placeholder="Password">
+                    <input
+                      id="" v-model="formData.password" type="password"
+                      class="form-control form-control-lg" placeholder="Password"
+                    >
                   </div>
                   <div class="form-group">
-                    <input id="" v-model="formData.confirm_password" type="password" class="form-control form-control-lg" placeholder="Confirm Password">
+                    <input
+                      id="" v-model="formData.confirm_password" type="password"
+                      class="form-control form-control-lg" placeholder="Confirm Password"
+                    >
                   </div>
                   <div class="mt-3">
                     <!-- <router-link class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" to="/">SIGN UP</router-link> -->

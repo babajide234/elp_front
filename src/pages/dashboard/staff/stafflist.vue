@@ -162,13 +162,12 @@
                           </b-col>
                         </b-row>
                         <b-row>
-                          <b-col>
-                          </b-col>
+                          <b-col />
                         </b-row>
                       </b-container>
                     </b-tab>
-                    <b-tab title="Notes"></b-tab>
-                    <b-tab title="Immunizations"></b-tab>
+                    <b-tab title="Notes" />
+                    <b-tab title="Immunizations" />
                     <b-tab title="Time Clock Entries">
                       <b-container>
                         <b-row>
@@ -188,7 +187,10 @@
                         </b-row>
                         <b-row>
                           <b-col>
-                            <b-table striped responsive hover :items="cloctable">
+                            <b-table
+                              striped responsive hover
+                              :items="cloctable"
+                            >
                               <template #cell(action)="action">
                                 <el-dropdown>
                                   <span class="focus:bg-gray-200 hover:bg-gray-200 btn btn-sm btn-rounded btn-icon flex justify-center items-center">
@@ -225,7 +227,10 @@
                         </b-row>
                         <b-row>
                           <b-col>
-                            <b-table striped responsive hover :items="cert">
+                            <b-table
+                              striped responsive hover
+                              :items="cert"
+                            >
                               <!-- <template #cell(action)="action">
                                 <el-dropdown>
                                   <span class="focus:bg-gray-200 hover:bg-gray-200 btn btn-sm btn-rounded btn-icon flex justify-center items-center">
@@ -262,7 +267,10 @@
                         </b-row>
                         <b-row>
                           <b-col>
-                            <b-table striped responsive hover :items="training">
+                            <b-table
+                              striped responsive hover
+                              :items="training"
+                            >
                               <template #cell(action)="action">
                                 <el-dropdown>
                                   <span class="focus:bg-gray-200 hover:bg-gray-200 btn btn-sm btn-rounded btn-icon flex justify-center items-center">
@@ -280,7 +288,7 @@
                         </b-row>
                       </b-container>
                     </b-tab>
-                    <b-tab title="Forms"></b-tab>
+                    <b-tab title="Forms" />
                   </b-tabs>
                 </b-card>
               </b-col>
@@ -304,7 +312,10 @@
     <div class="row">
       <div class="col-lg-12 grid-margin stretch-card">
         <div class="card p-4">
-          <b-table striped responsive hover :items="items">
+          <b-table
+            striped responsive hover
+            :items="items"
+          >
             <template #cell(action)="action">
               <el-dropdown>
                 <span class="focus:bg-gray-200 hover:bg-gray-200 btn btn-sm btn-rounded btn-icon flex justify-center items-center">

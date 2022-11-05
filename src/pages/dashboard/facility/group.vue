@@ -70,7 +70,7 @@
                         label-for="role"
                       >
                         <b-input-group class="mt-3">
-                          <b-form-input></b-form-input>
+                          <b-form-input />
                           <b-input-group-append>
                             <b-button variant="outline-success">ADD GROUP</b-button>
                           </b-input-group-append>
@@ -135,7 +135,10 @@
     <div class="row">
       <div class="col-lg-12 grid-margin stretch-card">
         <div class="card p-4">
-          <b-table striped responsive hover :items="items">
+          <b-table
+            striped responsive hover
+            :items="items"
+          >
             <template #cell(action)="action">
               <el-dropdown>
                 <span class="focus:bg-gray-200 hover:bg-gray-200 btn btn-sm btn-rounded btn-icon flex justify-center items-center">

@@ -279,7 +279,10 @@
     <div class="row">
       <div class="col-lg-12 grid-margin stretch-card">
         <div class="card p-4">
-          <b-table striped responsive hover :items="items">
+          <b-table
+            striped responsive hover
+            :items="items"
+          >
             <template #cell(action)="action">
               <el-dropdown>
                 <span class="focus:bg-gray-200 hover:bg-gray-200 btn btn-sm btn-rounded btn-icon flex justify-center items-center">

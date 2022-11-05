@@ -1,4 +1,4 @@
-<template> 
+<template>
   <section class="login">
     <div class="container-scroller">
       <div class="container-fluid page-body-wrapper full-page-wrapper">
@@ -13,10 +13,16 @@
                 <h6 class="font-weight-light">Sign in to continue.</h6>
                 <div class="pt-3">
                   <div class="form-group">
-                    <input v-model="user.email" type="email" class="form-control form-control-lg" placeholder="Username">
+                    <input
+                      v-model="user.email" type="email" class="form-control form-control-lg"
+                      placeholder="Username"
+                    >
                   </div>
                   <div class="form-group">
-                    <input v-model="user.password" type="password" class="form-control form-control-lg" placeholder="Password">
+                    <input
+                      v-model="user.password" type="password" class="form-control form-control-lg"
+                      placeholder="Password"
+                    >
                   </div>
                   <div class="mt-3">
                     <button class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" @click="login">SIGN IN</button>

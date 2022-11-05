@@ -283,7 +283,10 @@
           label-for="level"
         >
           <div v-for="(item, key, index) in data.flags" :key="key" class="">
-            <input :id="'checkbox_'+index" v-model="data.flags[key]" :name="'checkbox-'+index" type="checkbox">
+            <input
+              :id="'checkbox_'+index" v-model="data.flags[key]" :name="'checkbox-'+index"
+              type="checkbox"
+            >
             <label :for="'checkbox_'+index" class="capitalize">{{ key.replaceAll('_'," ") }}</label>
           </div>
         </b-form-group>
@@ -295,7 +298,10 @@
           label-for="level"
         >
           <div v-for="(item, key, index) in data.income" :key="key" class="">
-            <input :id="'check_'+index" v-model="data.income[key]" :name="'check_'+index" type="checkbox">
+            <input
+              :id="'check_'+index" v-model="data.income[key]" :name="'check_'+index"
+              type="checkbox"
+            >
             <label :for="'check_'+index" class="capitalize">{{ key.replaceAll('_'," ") }}</label>
           </div>
         </b-form-group>
@@ -321,7 +327,10 @@
           label-for="level"
         >
           <div v-for="(item, key, index) in data.mail_preference" :key="key" class="">
-            <input :id="'ch_'+index" v-model="data.mail_preference[key]" :name="'ch_'+index" type="checkbox">
+            <input
+              :id="'ch_'+index" v-model="data.mail_preference[key]" :name="'ch_'+index"
+              type="checkbox"
+            >
             <label :for="'ch_'+index" class="capitalize">{{ key.replaceAll('_'," ") }}</label>
           </div>
         </b-form-group>
@@ -331,7 +340,10 @@
           label-for="level"
         >
           <div v-for="(item, key, index) in data.military_information" :key="key" class="">
-            <input :id="'mil_'+index" v-model="data.military_information[key]" :name="'mil_'+index" type="checkbox">
+            <input
+              :id="'mil_'+index" v-model="data.military_information[key]" :name="'mil_'+index"
+              type="checkbox"
+            >
             <label :for="'mil_'+index" class="capitalize">{{ key.replaceAll('_'," ") }}</label>
           </div>
           <!-- <b-form-select v-model="" :options="Military_Information_options" /> -->

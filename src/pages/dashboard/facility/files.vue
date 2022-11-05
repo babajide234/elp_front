@@ -59,7 +59,7 @@
             <h6 class="mb-0">Janes Folder(No Files)</h6>
           </template>
           <b-card-text>No Files in This Folder</b-card-text>
-          <template #footer class=" float-right">
+          <template #footer>
             <div class=" float-right">
               <b-button href="#" class="btn btn btn-gradient-primary btn-fw btn-secondary">Upload File To Folder</b-button>
               <b-button href="#" class="btn btn btn-gradient-primary btn-fw btn-secondary">Rename</b-button>

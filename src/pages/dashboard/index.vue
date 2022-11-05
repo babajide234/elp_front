@@ -227,7 +227,10 @@
                     <td> May 15, 2015 </td>
                     <td>
                       <div class="progress">
-                        <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" />
+                        <div
+                          class="progress-bar bg-gradient-success" role="progressbar" style="width: 25%"
+                          aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                        />
                       </div>
                     </td>
                   </tr>
@@ -237,7 +240,10 @@
                     <td> Jul 01, 2015 </td>
                     <td>
                       <div class="progress">
-                        <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" />
+                        <div
+                          class="progress-bar bg-gradient-danger" role="progressbar" style="width: 75%"
+                          aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                        />
                       </div>
                     </td>
                   </tr>
@@ -247,7 +253,10 @@
                     <td> Apr 12, 2015 </td>
                     <td>
                       <div class="progress">
-                        <div class="progress-bar bg-gradient-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" />
+                        <div
+                          class="progress-bar bg-gradient-warning" role="progressbar" style="width: 90%"
+                          aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                        />
                       </div>
                     </td>
                   </tr>
@@ -257,7 +266,10 @@
                     <td> May 15, 2015 </td>
                     <td>
                       <div class="progress">
-                        <div class="progress-bar bg-gradient-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" />
+                        <div
+                          class="progress-bar bg-gradient-primary" role="progressbar" style="width: 50%"
+                          aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                        />
                       </div>
                     </td>
                   </tr>
@@ -267,7 +279,10 @@
                     <td> May 03, 2015 </td>
                     <td>
                       <div class="progress">
-                        <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" />
+                        <div
+                          class="progress-bar bg-gradient-danger" role="progressbar" style="width: 35%"
+                          aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"
+                        />
                       </div>
                     </td>
                   </tr>
@@ -277,7 +292,10 @@
                     <td> Jun 05, 2015 </td>
                     <td>
                       <div class="progress">
-                        <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" />
+                        <div
+                          class="progress-bar bg-gradient-info" role="progressbar" style="width: 65%"
+                          aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                        />
                       </div>
                     </td>
                   </tr>
@@ -307,7 +325,7 @@ import todoList from '../../components/apps/todoList';
 
 export default {
   // eslint-disable-next-line vue/name-property-casing
-  name: 'dashboard',
+  name: 'Dashboard',
   components: {
     // DatePicker,
     trafficSourceChart,

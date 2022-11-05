@@ -342,7 +342,10 @@
                 <b-row>
                   <b-col class="mt-4">
                     <b-card>
-                      <b-table striped responsive hover :items="medications" />
+                      <b-table
+                        striped responsive hover
+                        :items="medications"
+                      />
                     </b-card>
                   </b-col>
                 </b-row>
@@ -354,7 +357,10 @@
                 <b-row>
                   <b-col class="mt-4">
                     <b-card>
-                      <b-table striped responsive hover :items="medications" />
+                      <b-table
+                        striped responsive hover
+                        :items="medications"
+                      />
                     </b-card>
                   </b-col>
                 </b-row>
@@ -370,7 +376,10 @@
                 <b-row class="mt-4">
                   <b-col>
                     <b-card>
-                      <b-table striped responsive hover :items="diagnosis" />
+                      <b-table
+                        striped responsive hover
+                        :items="diagnosis"
+                      />
                     </b-card>
                   </b-col>
                 </b-row>
@@ -386,7 +395,10 @@
                 <b-row class="mt-4">
                   <b-col>
                     <b-card>
-                      <b-table striped responsive hover :items="allergy" />
+                      <b-table
+                        striped responsive hover
+                        :items="allergy"
+                      />
                     </b-card>
                   </b-col>
                 </b-row>
@@ -402,7 +414,10 @@
                 <b-row class="mt-4">
                   <b-col>
                     <b-card>
-                      <b-table striped responsive hover :items="immunization" />
+                      <b-table
+                        striped responsive hover
+                        :items="immunization"
+                      />
                     </b-card>
                   </b-col>
                 </b-row>
@@ -1026,7 +1041,10 @@
       <div class="col-lg-12 grid-margin stretch-card">
         <div class="card">
           <div class="card-body">
-            <b-table striped responsive hover :items="myProvider">
+            <b-table
+              striped responsive hover
+              :items="myProvider"
+            >
               <template #cell(action)="data">
                 <el-dropdown>
                   <span class="focus:bg-gray-200 hover:bg-gray-200 btn btn-sm btn-rounded btn-icon flex justify-center items-center">
